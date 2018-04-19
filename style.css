@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 12px;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+}
+
+/************** HEADER ***************/
+header {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.banner-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    z-index: -10;
+}
+
+/************** MENU BTN ***************/
+
+.menu-btn {
+    display: block;
+    cursor: pointer;
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    width: 55px;
+    height: 55px;
+    z-index: 10;
+    padding: 5px 0 5px 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.bar,
+.bar::after,
+.bar::before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.4s ease;
+    background-color: rgb(0, 0, 0);
+    content: '';
+    height: 4px;
+    width: 35px;
+}
+
+.bar {
+    margin-top: 0;
+}
+
+.bar::after {
+    margin-top: 9px;
+}
+
+.bar::before {
+    margin-top: -9px;
+}
+
+.menu-btn.expanded {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.menu-btn.expanded .bar {
+    background: transparent;
+}
+
+.menu-btn.expanded .bar::after,
+.menu-btn.expanded .bar::before {
+    margin-top: 0;
+}
+
+.menu-btn.expanded .bar::after {
+    transform: rotate(45deg);
+}
+
+.menu-btn.expanded .bar::before {
+    transform: rotate(-45deg);
+}
+
+/*************** NAVBAR ***************/
+
+.navbar {
+    transition: right 0.4s ease;
+    background-color: rgb(255, 255, 255);
+    font-size: 1.7em;
+    height: 100vh;
+    right: -170px;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 170px;
+    align-self: center;
+    z-index: 1;
+}
+
+.navbar.expanded {
+    right: 0;
+}
+
+.navbar .logo {
+    font-size: 1.7em;
+    text-align: center;
+    margin: 90px 10px 10px 10px;
+    padding: 0;
+}
+
+.navbar ul {
+    position: absolute;
+    list-style: none;
+    top: 50vh;
+    transform: translateY(-20vh);
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    padding: 10px 0;
+}
+
+.navbar a {
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+    padding: 0 4px 6px 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.navbar a:hover {
+    border-bottom: 3px solid black;
+    transition: 0.2s ease;
+}
+
+/*************** MAIN ***************/
+section {
+    height: 100vh;
+}
+
+.section-img {
+    left: 0;
+    height: 70vh;
+    width: 100vw;
+    object-fit: cover;
+}
+
+#section2 {
+    height: 265vh;
+}
+
+/*************** FOOTER ***************/
+footer {
+    height: 35vh;
+    background: black;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.8em;
+}
+
