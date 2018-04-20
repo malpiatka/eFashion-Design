@@ -109,7 +109,6 @@ header {
 .navbar.expanded {
     right: 0;
 }
-
 .navbar .logo {
     font-size: 1.5em;
     text-align: center;
@@ -137,7 +136,7 @@ header {
     padding: 5px 0;
 }
 
-.navbar a {
+.navbar ul li a {
     cursor: pointer;
     text-align: center;
     text-decoration: none;
@@ -148,7 +147,7 @@ header {
     text-transform: uppercase;
 }
 
-.navbar a:hover {
+.navbar ul li a:hover {
     border-bottom: 3px solid black;
     transition: all 0.4s ease;
     color: #b88100;
@@ -230,6 +229,10 @@ h1 {
     font-family: 'Playball', cursive;
     margin: 0;
     word-spacing: 0.4em;
+}
+a{
+    text-decoration: none;
+    color: black;
 }
 
 span {
@@ -448,6 +451,7 @@ footer h1 {
 .fa-linkedin-in {
     font-size: 2.6em;
     margin: 5px 15px;
+    color: white;
 }
 
 .fa-facebook-f:hover,
@@ -549,8 +553,6 @@ footer h1 {
 
     .section-img {
         left: 0;
-        height: 100vh;
-        width: 50vw;
         object-fit: cover;
     }
 
