@@ -229,7 +229,7 @@ section {
 h1 {
     font-family: 'Playball', cursive;
     margin: 0;
-    word-spacing: 0.5em;
+    word-spacing: 0.4em;
 }
 
 span {
@@ -248,16 +248,36 @@ button {
 }
 
 /*************** SECTIONS ***************/
+.section1-txt,
+.section2-txt,
+.section4-txt {
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    width: 90%;
+    padding: 10px;
+}
+
+.section1-txt h1,
+.section2-txt h1,
+.section4-txt h1 {
+    font-size: 2.5em;
+}
+
+.section1-txt p,
+.section2-txt p,
+.section4-txt p {
+    text-align: justify;
+    font-size: 1.1em;
+}
+
 #section2 {
     height: 100vh;
 }
 
-.section2-txt {
-    height: 20vh;
-}
-
 .slideshow-container {
-    height: 80vh;
+    height: 75vh;
+    width: 100%;
 }
 
 .slideshow {
@@ -303,7 +323,11 @@ button {
 }
 
 .section3-txt {
-    height: 25vh;
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    margin: 0;
+    width: 60vw;
     padding: 5px;
     border: 10px double white;
     background-color: rgba(255, 255, 255, 0.30);
@@ -334,7 +358,7 @@ button {
 
 #section5 h1 {
     text-align: center;
-    margin: 20px;
+    margin: 30px 0 20px;
     text-transform: uppercase;
     color: white;
     font-size: 2.6em;
@@ -383,9 +407,9 @@ input[type="submit"] {
     font-size: 2.2rem;
     color: #b88100;
     font-weight: 600;
-    margin: 10px auto 20px auto;
+    margin: 20px auto 20px auto;
     font-family: 'Playball', cursive;
-    width: 100px;
+    width: 120px;
     -webkit-box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.3);
     box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.3);
@@ -410,7 +434,7 @@ footer {
 }
 
 footer h1 {
-    padding: 20px;
+    padding: 30px 0 15px;
     font-size: 2.6em;
 }
 
@@ -423,7 +447,7 @@ footer h1 {
 .fa-vine,
 .fa-linkedin-in {
     font-size: 2.6em;
-    margin: 5px 10px;
+    margin: 5px 15px;
 }
 
 .fa-facebook-f:hover,
@@ -474,6 +498,36 @@ footer h1 {
         font-size: 1.2em;
     }
 
+    .banner {
+        left: 3vw;
+        width: 45vw;
+        padding: 10px;
+    }
+
+    .banner h1 {
+        word-spacing: 0.2em;
+        font-size: 4em;
+    }
+
+    .banner span {
+        color: #b88100;
+    }
+
+    .banner h2 {
+        padding: 5px 10px;
+        font-size: 2em;
+        font-weight: 400;
+    }
+
+    .banner button {
+        margin: 10px;
+    }
+
+    .banner button a {
+        font-size: 2.8em;
+        font-weight: 500;
+    }
+
     #section1,
     #section2,
     #section3,
@@ -487,5 +541,137 @@ footer h1 {
     #section4 .section-img {
         height: 100vh;
         width: 100%;
+    }
+
+    h1 {
+        word-spacing: 0.3em;
+    }
+
+    .section-img {
+        left: 0;
+        height: 100vh;
+        width: 50vw;
+        object-fit: cover;
+    }
+
+    .section1-txt,
+    .section2-txt,
+    .section4-txt {
+        width: 80%;
+    }
+
+    .section1-txt h1,
+    .section2-txt h1,
+    .section4-txt h1 {
+        font-size: 3.5em;
+        margin-bottom: 5vh;
+    }
+
+    .section1-txt p,
+    .section2-txt p,
+    .section4-txt p {
+        font-size: 1.3em;
+    }
+
+    .slideshow-container {
+        height: 100vh;
+    }
+
+    #section3 {
+        height: 80vh;
+    }
+
+    .section3-txt h1 {
+        font-size: 3.5em;
+    }
+
+    .section3-txt p {
+        font-weight: 400;
+        font-size: 2em;
+    }
+
+    #section5 {
+        height: 70vh;
+    }
+
+    #section5 h1 {
+        text-align: center;
+        margin: 20px;
+        text-transform: uppercase;
+        color: white;
+        font-size: 3em;
+    }
+
+    form {
+        width: 60vw;
+        font-size: 1.2em;
+        margin-top: 15px;
+    }
+
+    input {
+        width: 60vw;
+    }
+
+    textarea {
+        width: 60vw;
+        height: 30vh;
+    }
+
+    input[type="submit"] {
+        font-size: 2.5em;
+    }
+
+    footer {
+        height: 30vh;
+    }
+
+    footer h1 {
+        font-size: 2.8em;
+    }
+
+    .fa-facebook-f,
+    .fa-twitter,
+    .fa-instagram,
+    .fa-pinterest-p,
+    .fa-snapchat-ghost,
+    .fa-youtube,
+    .fa-vine,
+    .fa-linkedin-in {
+        font-size: 2.8em;
+        margin: 10px 25px;
+    }
+}
+
+/*************** MEDIA (750PX) ***************/
+@media (min-width: 750px) {
+    .section1-txt,
+    .section2-txt,
+    .section4-txt {
+        width: 70%;
+    }
+
+    .section1-txt h1,
+    .section2-txt h1,
+    .section4-txt h1 {
+        font-size: 3.7em;
+    }
+
+    .section1-txt p,
+    .section2-txt p,
+    .section4-txt p {
+        font-size: 1.5em;
+    }
+
+    #section5 {
+        height: 80vh;
+    }
+}
+
+/*************** MEDIA (900PX) ***************/
+@media (min-width: 900px) {
+    .section1-txt,
+    .section2-txt,
+    .section4-txt {
+        width: 60%;
     }
 }
