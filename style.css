@@ -154,28 +154,6 @@ header {
     color: #b88100;
 }
 
-/*************** MAIN ***************/
-section {
-    height: 100vh;
-}
-
-h1 {
-    font-family: 'Playball', cursive;
-    margin: 0;
-    word-spacing: 0.5em;
-}
-
-button {
-    font-family: 'Playball', cursive;
-}
-
-.section-img {
-    left: 0;
-    height: 70vh;
-    width: 100vw;
-    object-fit: cover;
-}
-
 /*************** BANNER ***************/
 
 .banner-img {
@@ -195,12 +173,12 @@ button {
     width: 67vw;
     padding: 5px;
     border: 10px double white;
-    background-color: rgba(255, 255, 255, 0.20);
+    background-color: rgba(255, 255, 255, 0.30);
 }
 
 .banner h1 {
     text-align: center;
-    margin: 0;
+    margin: 5px;
     padding: 0 5px;
     word-spacing: normal;
     line-height: 1;
@@ -219,36 +197,131 @@ button {
 
 .banner button {
     margin: 5px;
-    background: none;
-    border: none;
+    padding: 0;
+    background: rgba(255, 255, 255, 0.7);
+    border: 2px solid black;
 }
 
 .banner button a {
-    padding: 5px 10px;
-    font-size: 2em;
+    margin: 0;
+    padding: 0 20px;
+    font-size: 2.2em;
     text-decoration: none;
-    color: black;
+    color: #b88100;
     font-weight: 600;
+    cursor: pointer;
 }
 
-/*************** SECTION 1 ***************/
+.banner button:hover {
+    background-color: #b88100;
+}
 
-/*************** SECTION 2 ***************/
+.banner button a:hover {
+    color: white;
+
+}
+
+/*************** MAIN ***************/
+section {
+    height: 100vh;
+}
+
+h1 {
+    font-family: 'Playball', cursive;
+    margin: 0;
+    word-spacing: 0.5em;
+}
+
+span {
+    color: #b88100;
+}
+
+button {
+    font-family: 'Playball', cursive;
+}
+
+.section-img {
+    left: 0;
+    height: 70vh;
+    width: 100vw;
+    object-fit: cover;
+}
+
+/*************** SECTIONS ***************/
 #section2 {
-    height: 300vh;
+    height: 100vh;
 }
 
-/*************** SECTION 3 ***************/
+.section2-txt {
+    height: 20vh;
+}
+
+.slideshow-container {
+    height: 80vh;
+}
+
+.slideshow {
+    display: none;
+}
+
+.slideshow img {
+    position: absolute;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .5
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .5
+    }
+    to {
+        opacity: 1
+    }
+}
+
 #section3 {
+    height: 50vh;
     background: url("img/attractive-1846127_1920.jpg");
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
 }
 
-/*************** SECTION 4 ***************/
+.section3-txt {
+    height: 25vh;
+    padding: 5px;
+    border: 10px double white;
+    background-color: rgba(255, 255, 255, 0.30);
+}
 
-/*************** SECTION 5 ***************/
+.section3-txt h1 {
+    text-align: center;
+    margin: 5px;
+    padding: 0 5px;
+    word-spacing: normal;
+    line-height: 1;
+    font-size: 2.2em;
+}
+
+.section3-txt p {
+    font-weight: 600;
+}
+
 #section5 {
     background: url("img/background-bags-black-346751.jpg");
     background-position: center;
@@ -256,13 +329,15 @@ button {
     background-size: cover;
     display: grid;
     justify-items: center;
-    height: 60vh;
+    height: 65vh;
 }
 
 #section5 h1 {
     text-align: center;
-    margin: 10px;
+    margin: 20px;
     text-transform: uppercase;
+    color: white;
+    font-size: 2.6em;
 }
 
 form {
@@ -277,30 +352,12 @@ input {
     justify-self: center;
     width: 80vw;
     text-decoration: none;
+    background: rgba(255, 255, 255, 0.7);
     color: black;
     margin: 5px 0;
     padding: 5px;
     border: none;
     cursor: pointer;
-}
-
-input[type="submit"] {
-    display: grid;
-    justify-self: center;
-    background-color: white;
-    padding: 5px 10px;
-    font-size: 1.4rem;
-    margin: 5px auto 20px auto;
-    font-family: 'Playball', cursive;
-    width: 100px;
-    -webkit-box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.3);
-    box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.3);
-}
-
-input[type="submit"]:hover {
-    color: white;
-    background-color: black;
 }
 
 textarea {
@@ -311,8 +368,32 @@ textarea {
     margin: 5px 0;
     padding: 5px;
     border: none;
+    background: rgba(255, 255, 255, 0.7);
     cursor: pointer;
     overflow-y: scroll;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    display: grid;
+    justify-self: center;
+    background: rgba(255, 255, 255, 0.8);
+    border: 2px solid black;
+    padding: 5px 10px;
+    font-size: 2.2rem;
+    color: #b88100;
+    font-weight: 600;
+    margin: 10px auto 20px auto;
+    font-family: 'Playball', cursive;
+    width: 100px;
+    -webkit-box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+input[type="submit"]:hover {
+    background-color: rgba(184, 129, 0, 0.8);
+    color: white;
 }
 
 input:focus, textarea:focus {
@@ -326,7 +407,34 @@ footer {
     background: black;
     color: white;
     text-transform: uppercase;
-    font-size: 1.8em;
+}
+
+footer h1 {
+    padding: 20px;
+    font-size: 2.6em;
+}
+
+.fa-facebook-f,
+.fa-twitter,
+.fa-instagram,
+.fa-pinterest-p,
+.fa-snapchat-ghost,
+.fa-youtube,
+.fa-vine,
+.fa-linkedin-in {
+    font-size: 2.6em;
+    margin: 5px 10px;
+}
+
+.fa-facebook-f:hover,
+.fa-twitter:hover,
+.fa-instagram:hover,
+.fa-pinterest-p:hover,
+.fa-snapchat-ghost:hover,
+.fa-youtube:hover,
+.fa-vine:hover,
+.fa-linkedin-in:hover {
+    color: #e09d00;
 }
 
 /*************** MEDIA (350PX) ***************/
@@ -368,6 +476,7 @@ footer {
 
     #section1,
     #section2,
+    #section3,
     #section4 {
         display: grid;
         grid-template-columns: 1fr 1fr;
