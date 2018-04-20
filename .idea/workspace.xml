@@ -25,14 +25,14 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.43091336">
+    <splitter split-orientation="horizontal" split-proportion="0.44600165">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="346">
-                  <caret line="32" column="40" lean-forward="true" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="41" />
+                <state relative-caret-position="204">
+                  <caret line="28" column="31" lean-forward="true" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
                   <folding />
                 </state>
               </provider>
@@ -55,8 +55,8 @@
           <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="450">
-                  <caret line="554" column="16" lean-forward="false" selection-start-line="554" selection-start-column="16" selection-end-line="554" selection-end-column="16" />
+                <state relative-caret-position="238">
+                  <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
                   <folding />
                 </state>
               </provider>
@@ -65,6 +65,11 @@
         </leaf>
       </split-second>
     </splitter>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>section-img</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -78,8 +83,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/script.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/style.css" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -274,12 +279,12 @@
       <workItem from="1524235015452" duration="112000" />
       <workItem from="1524235381754" duration="79000" />
       <workItem from="1524237517979" duration="5188000" />
-      <workItem from="1524245493491" duration="1826000" />
+      <workItem from="1524245493491" duration="5241000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20656000" />
+    <option name="totallyTimeSpent" value="24071000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -576,18 +581,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="32" column="40" lean-forward="true" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="41" />
-          <folding />
-        </state>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/coat-dancing-face-794062.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="554" column="16" lean-forward="false" selection-start-line="554" selection-start-column="16" selection-end-line="554" selection-end-column="16" />
+        <state relative-caret-position="238">
+          <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="28" column="31" lean-forward="true" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
           <folding />
         </state>
       </provider>
