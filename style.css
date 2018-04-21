@@ -121,10 +121,12 @@ header {
     width: 100%;
     text-align: center;
     margin: 20vh 0 0;
+    padding: 0;
 }
 
 .navbar ul li {
     padding: 5px 0;
+    margin: 0 auto;
 }
 
 .navbar ul li a {
@@ -160,15 +162,15 @@ header {
     top: 5vh;
     left: 5vw;
     width: 67vw;
-    padding: 5px;
+    padding: 2%;
     border: 10px double white;
     background-color: rgba(255, 255, 255, 0.30);
 }
 
 .banner h1 {
     text-align: center;
-    margin: 5px;
-    padding: 0 5px;
+    margin: 2%;
+    padding: 0;
     word-spacing: normal;
     line-height: 1;
     font-size: 2.5em;
@@ -179,13 +181,13 @@ header {
 }
 
 .banner h2 {
-    padding: 5px;
-    margin: 10px 0;
+    padding: 2%;
+    margin: 1% auto;
     text-align: inherit;
 }
 
 .banner button {
-    margin: 5px;
+    margin: 2%;
     padding: 0;
     background: rgba(255, 255, 255, 0.7);
     border: 2px solid black;
@@ -210,6 +212,7 @@ header {
 }
 
 /*************** MAIN ***************/
+
 h1 {
     font-family: 'Playball', cursive;
     word-spacing: 0.4em;
@@ -236,25 +239,18 @@ button {
     object-fit: cover;
 }
 
-.section1-txt,
-.section2-txt,
-.section4-txt {
-    display: grid;
-    justify-self: center;
-    align-self: center;
+.txt {
     width: 90%;
+    margin: 1% auto;
     padding: 10px;
 }
 
-.section1-txt h1,
-.section2-txt h1,
-.section4-txt h1 {
+.txt h1 {
     font-size: 2.5em;
+    margin: 1% 0;
 }
 
-.section1-txt p,
-.section2-txt p,
-.section4-txt p {
+.txt p {
     text-align: justify;
     font-size: 1.1em;
 }
@@ -297,7 +293,6 @@ button {
 }
 
 #section3 {
-    height: 60vh;
     background: url("img/attractive-1846127_1920.jpg");
     background-position: center;
     background-attachment: fixed;
@@ -305,26 +300,23 @@ button {
 }
 
 .section3-txt {
-    display: grid;
-    align-self: center;
-    justify-self: center;
-    width: 60vw;
-    padding: 5px;
+    width: 70vw;
+    padding: 1% 2%;
+    margin: 30% auto;
     border: 10px double white;
     background-color: rgba(255, 255, 255, 0.30);
 }
 
 .section3-txt h1 {
     text-align: center;
-    margin: 5px;
-    padding: 0 5px;
-    word-spacing: normal;
-    line-height: 1;
+    margin: 1%;
+    padding: 0;
     font-size: 2.2em;
 }
 
 .section3-txt p {
     font-weight: 600;
+    margin: 2% auto;
 }
 
 #section5 {
@@ -334,12 +326,13 @@ button {
     background-size: cover;
     display: grid;
     justify-items: center;
-    height: 65vh;
+    height: 100%;
+    padding: 2%;
 }
 
 #section5 h1 {
     text-align: center;
-    margin: 30px 0 20px;
+    margin: 7% 0 4%;
     text-transform: uppercase;
     color: white;
     font-size: 2.6em;
@@ -347,7 +340,6 @@ button {
 
 form {
     width: 80vw;
-    margin-top: 10px;
     justify-self: center;
 }
 
@@ -356,7 +348,7 @@ input {
     text-decoration: none;
     background: rgba(255, 255, 255, 0.7);
     color: black;
-    margin: 5px 0;
+    margin: 2% 0;
     padding: 5px;
     border: none;
     cursor: pointer;
@@ -365,7 +357,7 @@ input {
 textarea {
     width: 80vw;
     height: 20vh;
-    margin: 5px 0;
+    margin: 2% 0;
     padding: 5px;
     border: none;
     background: rgba(255, 255, 255, 0.7);
@@ -375,14 +367,15 @@ textarea {
 
 input[type="submit"] {
     cursor: pointer;
+    display: grid;
     justify-self: center;
     background: rgba(255, 255, 255, 0.8);
     border: 2px solid black;
-    padding: 5px 10px;
+    padding: 2px 10px;
     font-size: 2.2rem;
     color: #b88100;
     font-weight: 600;
-    margin: 20px auto 20px auto;
+    margin: 3% auto;
     font-family: 'Playball', cursive;
     width: 120px;
     -webkit-box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.3);
@@ -402,60 +395,46 @@ input:focus, textarea:focus {
 /*************** FOOTER ***************/
 footer {
     text-align: center;
-    height: 35vh;
+    height: 100%;
     background: black;
     color: white;
     text-transform: uppercase;
+    padding: 2%;
 }
 
 footer h1 {
-    padding: 30px 0 15px;
+    padding: 4% 0 2%;
+    margin: 0;
     font-size: 2.6em;
 }
 
 .icon {
     font-size: 2.6em;
-    margin: 5px 15px;
+    margin: 2% 5%;
     color: white;
 }
 
-.icon {
+.icon:hover {
     color: #e09d00;
-}
-
-/*************** MEDIA (350PX) ***************/
-@media (min-width: 350px) {
-    .navbar {
-        right: -200px;
-        width: 200px;
-    }
-
-    .navbar .logo {
-        font-size: 1.6em;
-        margin: 65px 10px 0;
-    }
-
-    .navbar ul li {
-        padding: 7px 0;
-    }
-
-    .navbar a {
-        font-size: 1.1em;
-    }
 }
 
 /*************** MEDIA (550PX) ***************/
 @media (min-width: 550px) {
+    .navbar {
+        right: -220px;
+        width: 220px;
+    }
+
     .navbar .logo {
         margin: 75px 10px 0;
     }
 
     .navbar ul {
-        margin: 15vh 0 0;
+        margin: 20vh 0 0;
     }
 
     .navbar ul li {
-        padding: 8px 0;
+        padding: 10px 0;
     }
 
     .navbar a {
@@ -464,18 +443,16 @@ footer h1 {
 
     .banner {
         left: 3vw;
-        width: 45vw;
-        padding: 10px;
+        width: 55vw;
     }
 
     .banner h1 {
         word-spacing: 0.2em;
-        font-size: 4em;
+        font-size: 3.6em;
     }
 
     .banner h2 {
-        padding: 5px 10px;
-        font-size: 2em;
+        font-size: 1.8em;
         font-weight: 400;
     }
 
@@ -507,22 +484,17 @@ footer h1 {
         word-spacing: 0.3em;
     }
 
-    .section1-txt,
-    .section2-txt,
-    .section4-txt {
+    .txt {
         width: 80%;
+        align-self: center;
     }
 
-    .section1-txt h1,
-    .section2-txt h1,
-    .section4-txt h1 {
-        font-size: 3.5em;
-        margin-bottom: 5vh;
+    .txt h1 {
+        font-size: 3.6em;
+        margin-bottom: 10vh;
     }
 
-    .section1-txt p,
-    .section2-txt p,
-    .section4-txt p {
+    .txt p {
         font-size: 1.3em;
     }
 
@@ -530,35 +502,22 @@ footer h1 {
         height: 100vh;
     }
 
-    #section3 {
-        height: 80vh;
+    .section3-txt {
+        width: 80vw;
     }
 
     .section3-txt h1 {
-        font-size: 3.5em;
+        font-size: 3.6em;
     }
 
     .section3-txt p {
         font-weight: 400;
-        font-size: 2em;
-    }
-
-    #section5 {
-        height: 70vh;
-    }
-
-    #section5 h1 {
-        text-align: center;
-        margin: 20px;
-        text-transform: uppercase;
-        color: white;
-        font-size: 3em;
+        font-size: 1.8em;
     }
 
     form {
         width: 60vw;
         font-size: 1.2em;
-        margin-top: 15px;
     }
 
     input {
@@ -574,54 +533,45 @@ footer h1 {
         font-size: 2.5em;
     }
 
-    footer {
-        height: 30vh;
-    }
-
     footer h1 {
         font-size: 2.8em;
     }
 
     .icon {
         font-size: 2.8em;
-        margin: 10px 25px;
     }
 }
 
 /*************** MEDIA (750PX) ***************/
 @media (min-width: 750px) {
-    .section1-txt,
-    .section2-txt,
-    .section4-txt {
+    .txt {
         width: 70%;
     }
 
-    .section1-txt h1,
-    .section2-txt h1,
-    .section4-txt h1 {
+    .txt h1 {
         font-size: 3.7em;
     }
 
-    .section1-txt p,
-    .section2-txt p,
-    .section4-txt p {
+    .txt p {
         font-size: 1.5em;
     }
 
-    #section5 {
-        height: 80vh;
+    .section3-txt {
+        width: 80vw;
     }
 
     #section5 h1 {
-        margin-top: 30px;
+        font-size: 3em;
+    }
+
+    form, input, textarea {
+        width: 50vw;
     }
 }
 
 /*************** MEDIA (900PX) ***************/
 @media (min-width: 900px) {
-    .section1-txt,
-    .section2-txt,
-    .section4-txt {
+    .txt {
         width: 60%;
     }
 }
