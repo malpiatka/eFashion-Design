@@ -482,7 +482,7 @@ footer h1 {
     #section4 {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        overflow-x: hidden;
+        overflow: hidden;
     }
 
     #section1 .section-img,
