@@ -223,7 +223,7 @@ a {
     color: black;
 }
 
-.change-letter::first-letter{
+.change-letter::first-letter {
     color: #966300;
 }
 
@@ -238,9 +238,8 @@ button {
     width: 100%;
     object-fit: cover;
 }
-.div-img{
-    margin: 0;
-    padding: 0;
+
+.div-img {
     height: 100%;
 }
 
@@ -333,6 +332,10 @@ button {
     justify-items: center;
     height: 100%;
     padding: 2%;
+}
+
+.contact-div {
+    height: 100%;
 }
 
 #section5 h1 {
@@ -433,9 +436,10 @@ footer h1 {
     .navbar .logo {
         margin: 75px 10px 0;
     }
-    .navbar a{
-    font-size: 1.3em;
-     }
+
+    .navbar a {
+        font-size: 1.3em;
+    }
 
     .navbar ul {
         margin: 20vh 0 0;
@@ -553,10 +557,11 @@ footer h1 {
 
 /*************** MEDIA (750PX) ***************/
 @media (min-width: 750px) {
-    .navbar a{
+    .navbar a {
         font-size: 1.4em;
     }
-    .navbar ul li a  {
+
+    .navbar ul li a {
         font-size: 1.3em;
     }
 
